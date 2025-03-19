@@ -105,28 +105,53 @@
             border-radius: 10px;
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
-            table {
-                width: 100%;
-            }
-
             h1 {
                 font-size: 2em;
-                padding: 15px;
+                padding: 12px;
             }
 
             .date-display {
-                font-size: 1.2em;
+                font-size: 1.1em;
             }
 
-            td, th {
+            table {
+                width: 100%;
+                font-size: 0.9em;
+            }
+
+            th, td {
                 padding: 8px;
                 font-size: 0.9em;
             }
 
             iframe {
-                width: 150px;
+                width: 100%;
+                height: 160px;
+            }
+        }
+
+        @media (max-width: 424px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .date-input {
+                width: 160px;
+                font-size: 0.9em;
+            }
+
+            .submit-btn {
+                font-size: 0.9em;
+                padding: 6px 12px;
+            }
+
+            table {
+                font-size: 0.85em;
+            }
+
+            iframe {
+                width: 100%;
                 height: 150px;
             }
         }
@@ -134,7 +159,7 @@
 </head>
 <body>
 
-    <h1>DISASTER REPORT</h1>
+    <h1>Earthquakes on Selected Date</h1>
 
     <div class="date-form">
         <input type="date" id="dateInput" class="date-input">
